@@ -91,6 +91,7 @@ def valida_questao(questao):
                     i += 1
                 if len(opcoes_vazias) > 0:
                     erros["opcoes"] = opcoes_vazias
+                    
     if "correta" in questao:
         if questao["correta"] != "A" and questao["correta"] != "B" and questao["correta"] != "C" and questao["correta"] != "D":
             erros["correta"] = "valor_errado"
