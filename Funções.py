@@ -91,7 +91,7 @@ def valida_questao(questao):
                     i += 1
                 if len(opcoes_vazias) > 0:
                     erros["opcoes"] = opcoes_vazias
-                    
+
     if "correta" in questao:
         if questao["correta"] != "A" and questao["correta"] != "B" and questao["correta"] != "C" and questao["correta"] != "D":
             erros["correta"] = "valor_errado"
@@ -105,3 +105,11 @@ def valida_questoes(questoes):
         resultado.append(erros)
 
     return resultado
+
+# Questão 4
+import random
+def sorteia_questao(questoes, nivel):
+    lista_questoes = questoes[nivel]
+    questao_sorteada = random.choice(lista_questoes)
+
+    return questao_sorteada
