@@ -130,3 +130,22 @@ def sorteia_questao_inedita(questoes, nivel, questoes_sorteadas):
     questoes_sorteadas.append(questao)
 
     return questao
+
+# Questão 6
+def questao_para_texto(questao, id):
+    text = "----------------------------------------\n"
+    text += "QUESTAO " + str(id) + "\n\n"
+    text += questao["titulo"] + "\n\n"
+    text += "RESPOSTAS:\n"
+
+    letras = ["A", "B", "C", "D"]
+    i = 0
+
+    while i < len(letras):
+        letra = letras[i]
+        text += letra + ": " + questao["opcoes"][letra]
+        if i < len(letras) - 1:
+            text += "\n"
+        i += 1
+
+    return text
