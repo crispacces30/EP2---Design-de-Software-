@@ -1,4 +1,4 @@
-quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
+questoes = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'nivel': 'facil',
           'opcoes': {'A': '-19', 'B': '85', 'C': '89', 'D': '99'},
           'correta': 'C'},
@@ -157,7 +157,7 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
           'correta': 'D'},
-          
+
                    {'titulo': 'Qual é o maior planeta do Sistema Solar?',
           'nivel': 'facil',
           'opcoes': {'A': 'Terra', 'B': 'Marte', 'C': 'Júpiter', 'D': 'Vênus'},
