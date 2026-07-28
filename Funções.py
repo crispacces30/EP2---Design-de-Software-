@@ -149,3 +149,20 @@ def questao_para_texto(questao, id):
         i += 1
 
     return text
+
+# Questão 7
+import random
+def gera_ajuda(questao):
+    respostas_erradas = []
+    correta = questao["correta"]
+    opcoes = questao["opcoes"]
+    for letra in opcoes:
+        if letra != correta:
+            respostas_erradas.append(opcoes[letra])
+    quantidade = random.randint(1, 2)
+    sorteadas = random.sample(respostas_erradas, quantidade)
+
+    texto = "DICA:\n"
+    texto += "Opções certamente erradas: "
+    texto += " | ".join(sorteadas)
+    return texto
