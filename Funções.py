@@ -1,4 +1,5 @@
 import random 
+
 # Questão 1
 def transforma_base(questoes):
     base_transformada = {}
@@ -51,7 +52,7 @@ def valida_questao(questao):
     if "correta" in questao:
         if questao["correta"] != "A" and questao["correta"] != "B" and questao["correta"] != "C" and questao["correta"] != "D":
             erros["correta"] = "valor_errado"
-            
+
     return erros
 
 # Questão 3
